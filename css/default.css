@@ -1,0 +1,354 @@
+@charset "utf-8";
+
+/* CSS Document */
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+header {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	background-color: #666;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 56px;
+	background: #000;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-nav nav {
+	width: 100%;
+	max-width: 1200px;
+}
+
+.header-nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	list-style: none;
+}
+
+.header-nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+	color: #ccc;
+}
+
+
+
+/* =============================
+	 IMAGEM DE PERFIL (posição original)
+	 ============================= */
+
+header div.img {
+	position: absolute;
+	left: 5%;
+	top: 55%;
+	/* Changed from 50% to 55% */
+	transform: translateY(-50%);
+	width: 30%;
+	max-width: 500px;
+	height: auto;
+}
+
+header div.img img {
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+	box-shadow: 0 0 30px black;
+	display: block;
+	object-fit: contain;
+	object-position: center center;
+	margin: 0 auto;
+}
+
+header div.text {
+	position: absolute;
+	left: 50%;
+	width: 45%;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-right: 5%;
+}
+
+
+header div.text h2 {
+	margin: 0;
+	color: #fff;
+	font-size: 35px;
+	line-height: 1.3;
+}
+
+/*
+header div.img img {
+	box-shadow: 0px 0px 30px 0px black;
+	position: absolute;
+	top: 90px;
+	left: 80px;
+	width: auto;
+	height: 500px;
+	border-radius: 15px;
+}
+
+header div.text h2 {
+	position: absolute;
+	top: 270px;
+	left: 640px;
+	color: #FFF;
+	font-size: 35px;
+}
+*/
+.destaque-nome {
+	color: #000000;
+	/* azul elegante */
+	font-weight: bold;
+}
+
+.destaque-profissao {
+	color: #000000;
+	/* coral suave, contrastando bem */
+	font-weight: bold;
+}
+
+section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: stretch;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+section img {
+	width: 300px;
+	height: auto;
+}
+
+section h2 {
+	margin: 5px;
+}
+
+h2 {
+	margin: 5px;
+}
+
+section.horizontal img {
+	width: auto;
+	height: 600px;
+	margin: 0 auto;
+}
+
+.projetos {
+	width: 100%;
+	max-width: 100vw;
+	/* Prevent horizontal overflow */
+	display: flex;
+	justify-content: center;
+	padding: 50px 20px;
+	box-sizing: border-box;
+	/* Include padding in width */
+	overflow-x: hidden;
+	/* Safety measure */
+}
+
+.container-projetos {
+	width: 100%;
+	max-width: 1200px;
+	/* Maximum content width */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.titulo {
+	font-size: 60px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+
+.cards div {
+	width: 100%;
+	max-width: 300px;
+	/* Card maximum width */
+	min-height: 245px;
+	background-color: #933009;
+	box-shadow: 0px 0px 30px 0px rgb(211, 110, 10);
+	padding: 20px;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.cards h2 {
+	font-size: 35px;
+	color: #fff;
+	margin-bottom: 20px;
+	text-align: center;
+	background-color: rgb(32 106 110 / 65%);
+	border-radius: 10px;
+}
+
+.cards a {
+	display: inline-block;
+	padding: 8px 20px;
+	margin-top: 15px;
+	background: #000;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+.cards a:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+	height: 30vh;
+	/* makes the footer take the full screen height */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* center vertically */
+	align-items: center;
+	/* center horizontally */
+	background-color: #666;
+	/* match your design */
+	text-align: center;
+}
+
+footer div.footer {
+	margin: 0 auto;
+}
+
+footer div.socialmedia {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 20px;
+}
+
+footer div.socialmedia i {
+	font-size: 40px;
+	color: white;
+	transition: transform 0.3s ease;
+}
+
+footer div.socialmedia i:hover {
+	transform: scale(1.2);
+	color: rgb(0, 0, 0);
+}
+
+footer div.footer h2 {
+	color: black;
+	font-weight: 600;
+	margin-top: 30px;
+}
+
+footer div.footer h1 {}
+
+footer div.footer i {
+	color: black;
+}
+
+
+
+@media only screen and (min-width:0px) and (max-width:576px) {
+
+	body {
+		overflow-x: hidden;
+	}
+
+	/* Reset header positioning */
+	header {
+		display: flex;
+		flex-direction: column;
+		padding-top: 80px;
+		min-height: auto;
+	}
+
+	header div.img,
+	header div.text {
+		position: static;
+		width: 90%;
+		max-width: none;
+		transform: none;
+		margin: 0 auto;
+		padding: 20px 0;
+	}
+
+	header div.img {
+		order: 1;
+		margin-top: 20px;
+	}
+
+	header div.text {
+		order: 2;
+	}
+
+	header div.img img {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	/* Project cards - stack vertically */
+	.projetos {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+	.cards {
+		flex-direction: column;
+		align-items: center;
+		padding: 0 10px;
+	}
+
+	.cards div {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media only screen and (min-width:577px) and (max-width:767px) {}
+
+@media only screen and (min-width:768px) and (max-width:991px) {}
+
+
+@media only screen and (min-width:992px) and (max-width:1199px) {}
+
+@media (min-width:1200px) {}

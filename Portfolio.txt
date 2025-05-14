@@ -1,0 +1,22 @@
+hearder: add an button for when the user click, it shows the text message
+
+
+
+
+
+
+
+
+
+
+
+projects: add a border in each div with a background color behind it 
+
+
+
+
+
+
+
+
+footer: add git hub icon aligned with the others
