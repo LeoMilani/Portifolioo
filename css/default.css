@@ -344,11 +344,98 @@ footer div.footer i {
 	}
 }
 
-@media only screen and (min-width:577px) and (max-width:767px) {}
+@media only screen and (min-width:577px) and (max-width:767px) {
 
-@media only screen and (min-width:768px) and (max-width:991px) {}
+	header {
+		display: flex;
+		flex-direction: column;
+		padding-top: 80px;
+		min-height: auto;
+	}
+
+	header div.img,
+	header div.text {
+		position: static;
+		width: 90%;
+		max-width: none;
+		transform: none;
+		margin: 0 auto;
+		padding: 20px 0;
+	}
+
+	header div.img {
+		order: 1;
+		margin-top: 20px;
+	}
+
+	header div.text {
+		order: 2;
+	}
+
+	header div.img img {
+		max-width: 400px;
+		/* Slightly larger image for medium screens */
+		margin: 0 auto;
+	}
+
+	/* Optional: Adjust text sizing for medium screens */
+	header div.text h2 {
+		font-size: 28px;
+	}
+
+	/* Project cards adjustments */
+	.cards {
+		flex-direction: column;
+		align-items: center;
+		padding: 0 10px;
+	}
+
+	.cards div {
+		max-width: 400px;
+		/* Slightly wider cards */
+		min-height: 200px;
+	}
+
+	.cards h2 {
+		font-size: 28px;
+	}
+
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+	header div.text h2 {
+		font-size: 30px;
+		line-height: 1.40;
+	}
+
+	header div.img {
+		width: 40%;
+	}
+
+}
 
 
-@media only screen and (min-width:992px) and (max-width:1199px) {}
+@media only screen and (min-width:992px) and (max-width:1199px) {
 
-@media (min-width:1200px) {}
+	header div.text h2 {
+		font-size: 30px;
+		line-height: 1.4;
+	}
+
+	header div.img {
+		width: 35%;
+	}
+}
+
+@media (min-width:1200px) {
+
+	header div.text h2 {
+		font-size: 30px;
+		line-height: 1.40;
+	}
+
+	header div.img {
+		width: 30%;
+	}
+}
